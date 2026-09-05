@@ -7,7 +7,8 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"preview:cloudflare": "wrangler pages dev dist"
+		"preview:cloudflare": "wrangler pages dev dist",
+		"deploy:cloudflare": "npm run build && wrangler pages deploy dist --project-name chilis"
 	},
 	"devDependencies": {
 		"vite": "^7.1.5",
