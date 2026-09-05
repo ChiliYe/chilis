@@ -10,7 +10,16 @@
 		"preview:cloudflare": "wrangler pages dev dist",
 		"deploy:cloudflare": "npm run build && wrangler pages deploy dist --project-name chilis"
 	},
+	"dependencies": {
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8"
+	},
 	"devDependencies": {
+		"@types/react": "^19.1.12",
+		"@types/react-dom": "^19.1.9",
+		"@vitejs/plugin-react": "^5.0.2",
+		"sass": "^1.92.1",
+		"typescript": "^5.9.2",
 		"vite": "^7.1.5",
 		"wrangler": "^4.35.0"
 	}

@@ -6,6 +6,8 @@
 
 一个可部署到 Cloudflare Pages 的静态网站。
 
+技术栈：React、TypeScript、Sass、Vite。
+
 ## 本地开发
 
 ```bash

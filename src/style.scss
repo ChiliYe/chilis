@@ -2,9 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Serif+SC:wght@500;700;900&display=swap");
 
+$cream: #f8f3e9;
+$green: #1d3429;
+$gold: #f5bd4f;
+$muted: #cbd8c3;
+
 :root {
-	color: #f8f3e9;
-	background: #1d3429;
+	color: $cream;
+	background: $green;
 	font-family: "DM Sans", sans-serif;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -13,15 +18,13 @@
 * {
 	box-sizing: border-box;
 }
-
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	margin: 0;
 	min-width: 320px;
-	background: #1d3429;
+	background: $green;
 }
 
 .shell {
@@ -35,7 +38,7 @@ body {
 		),
 		linear-gradient(
 			135deg,
-			#1d3429 0%,
+			$green 0%,
 			#264b3a 48%,
 			#173029 100%
 		);
@@ -47,41 +50,33 @@ body {
 	max-width: 1180px;
 	margin: 0 auto;
 }
-
 .topbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 28px 32px;
 }
-
-.brand,
-.action {
-	color: inherit;
-	text-decoration: none;
-}
-
 .brand {
 	display: inline-flex;
 	align-items: center;
 	gap: 10px;
+	color: inherit;
 	font-size: 18px;
 	font-weight: 700;
+	text-decoration: none;
 }
-
 .brand-mark {
 	display: grid;
 	width: 32px;
 	height: 32px;
 	place-items: center;
 	border-radius: 50%;
-	color: #1d3429;
-	background: #f5bd4f;
+	color: $green;
+	background: $gold;
 	font-weight: 700;
 }
-
 .status {
-	color: #cbd8c3;
+	color: $muted;
 	font-size: 13px;
 }
 .status-dot {
@@ -90,20 +85,18 @@ body {
 	height: 7px;
 	margin-right: 7px;
 	border-radius: 50%;
-	background: #f5bd4f;
+	background: $gold;
 }
-
 .hero {
 	padding: clamp(96px, 18vh, 200px) 32px 150px;
 }
 .eyebrow {
 	margin: 0 0 24px;
-	color: #f5bd4f;
+	color: $gold;
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.14em;
 }
-
 h1,
 h2 {
 	margin: 0;
@@ -113,38 +106,38 @@ h2 {
 h1 {
 	max-width: 720px;
 	font-size: clamp(52px, 9vw, 112px);
-	letter-spacing: 0;
 }
 h1 em {
-	color: #f5bd4f;
+	color: $gold;
 	font-style: normal;
 }
 .intro {
 	max-width: 360px;
 	margin: 34px 0 42px;
-	color: #cbd8c3;
+	color: $muted;
 	font-size: 17px;
 	line-height: 1.8;
 }
-
 .action {
 	display: inline-flex;
 	align-items: center;
 	gap: 28px;
 	padding: 14px 18px;
 	border: 1px solid rgba(245, 189, 79, 0.8);
-	color: #f5bd4f;
+	color: $gold;
+	background: transparent;
+	font: inherit;
 	font-weight: 700;
+	cursor: pointer;
 	transition:
 		background-color 0.2s ease,
 		color 0.2s ease;
 }
 .action:hover,
 .action:focus-visible {
-	color: #1d3429;
-	background: #f5bd4f;
+	color: $green;
+	background: $gold;
 }
-
 .feature {
 	display: flex;
 	align-items: end;
@@ -161,7 +154,7 @@ h2 {
 }
 .feature-note {
 	margin: 0;
-	color: #cbd8c3;
+	color: $muted;
 	font-size: 14px;
 	line-height: 1.7;
 	text-align: right;
@@ -171,8 +164,8 @@ h2 {
 	.topbar,
 	.hero,
 	.feature {
-		padding-left: 22px;
 		padding-right: 22px;
+		padding-left: 22px;
 	}
 	.hero {
 		padding-top: 100px;
