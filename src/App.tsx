@@ -67,19 +67,46 @@ function App() {
 								About
 							</a>
 						</li>
-						<li>
-							<a
-								href="#contact"
-								onClick={closeMenu}
-							>
-								Contact
-							</a>
-						</li>
 					</ul>
 				</nav>
 			</header>
 			<main id="explore">
-				<p>敬请期待……</p>
+				<div className="prod-box">
+					<div className="prod-title">
+						幻想音点 · fanMdot
+					</div>
+					<span className="prod-description">
+						幻想音点是chilis团队的第一款节奏游戏，特点是五条轨道以及全屏判定
+					</span>
+					<br />
+					<span className="prod-description-footer">
+						目前正在技术栈迁移阶段
+					</span>
+				</div>
+				<div className="prod-box">
+					<div className="prod-title">
+						万向和乐 · WxR
+					</div>
+					<span className="prod-description">
+						万向和乐是chilis团队的第二款节奏游戏，以低难度著称
+					</span>
+					<br />
+					<span className="prod-description-footer">
+						目前正在策划阶段
+					</span>
+				</div>
+				<div className="prod-box">
+					<div className="prod-title">
+						rtrc-framework
+					</div>
+					<br />
+					<span className="prod-description">
+						rtrc-framework是chilis团队开发的框架，用于支持2D游戏的开发
+					</span>
+					<span className="prod-description-footer">
+						目前正在开发起步阶段
+					</span>
+				</div>
 			</main>
 			<footer id="about">
 				<span>© 2026 Chilis</span>

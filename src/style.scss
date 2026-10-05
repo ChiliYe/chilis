@@ -116,6 +116,29 @@ main {
     flex: 1;
 }
 
+.prod-box {
+    // 一个盒子，有浅灰色背景色，圆角，内边距和阴影
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prod-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.prod-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.prod-description-footer {
+    font-size: 10px;
+    color: #999;
+}
+
 @media (max-width: 640px) {
     .App-header {
         flex-wrap: wrap;
