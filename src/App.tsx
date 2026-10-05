@@ -79,6 +79,13 @@ function App() {
 						幻想音点是chilis团队的第一款节奏游戏，特点是五条轨道以及全屏判定
 					</span>
 					<br />
+					<a
+						href="https://github.com/ChiliYe/fantasy-music-dots"
+						className="prod-description"
+					>
+						仓库链接
+					</a>
+					<br />
 					<span className="prod-description-footer">
 						目前正在技术栈迁移阶段
 					</span>
@@ -97,12 +104,19 @@ function App() {
 				</div>
 				<div className="prod-box">
 					<div className="prod-title">
-						rtrc-framework
+						rcrt-framework
 					</div>
-					<br />
 					<span className="prod-description">
-						rtrc-framework是chilis团队开发的框架，用于支持2D游戏的开发
+						rcrt-framework是chilis团队开发的框架，用于支持2D游戏的开发
 					</span>
+					<br />
+					<a
+						href="https://github.com/ChiliYe/rcrt-framework"
+						className="prod-description"
+					>
+						仓库链接
+					</a>
+					<br />
 					<span className="prod-description-footer">
 						目前正在开发起步阶段
 					</span>

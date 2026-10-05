@@ -26,11 +26,12 @@ header {
 
 .App-header {
     align-items: center;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: 0;
     padding: 12px 36px;
+    width: 100%;
 }
 
 .App-logo-link {
