@@ -1,0 +1,179 @@
+/** @format */
+
+.docs-page {
+	box-sizing: border-box;
+	display: grid;
+	gap: 32px;
+	grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 32px 24px;
+	width: 100%;
+}
+
+.docs-sidebar {
+	border-right: 1px solid #e5e5e5;
+	padding-right: 20px;
+
+	h2 {
+		font-size: 18px;
+		margin: 0 0 12px;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		border-radius: 4px;
+		color: #333;
+		display: block;
+		padding: 8px 10px;
+		text-decoration: none;
+
+		&:hover,
+		&[aria-current="page"] {
+			background-color: #f0f0f0;
+			color: #000;
+		}
+	}
+}
+
+.docs-outline {
+	margin-top: 28px;
+
+	> summary {
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 12px;
+	}
+
+	nav > ul {
+		border-left: 1px solid #e5e5e5;
+		margin-left: 4px;
+		padding-left: 8px;
+	}
+
+	nav ul ul {
+		border-left: 1px solid #e5e5e5;
+		margin-left: 8px;
+		padding-left: 8px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	.docs-outline-item {
+		align-items: center;
+		display: flex;
+	}
+
+	.docs-outline-item > a {
+		font-size: 14px;
+		padding: 5px 8px;
+	}
+
+	.docs-outline-toggle {
+		align-items: center;
+		background: transparent;
+		border: 0;
+		border-radius: 4px;
+		color: #666;
+		cursor: pointer;
+		display: inline-flex;
+		font-size: 18px;
+		height: 28px;
+		justify-content: center;
+		margin-left: auto;
+		width: 28px;
+
+		&:hover {
+			background-color: #eee;
+			color: #000;
+		}
+	}
+}
+
+.docs-content {
+	line-height: 1.7;
+	min-width: 0;
+	overflow-wrap: anywhere;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		scroll-margin-top: 24px;
+	}
+
+	> :first-child {
+		margin-top: 0;
+	}
+
+	a {
+		color: #1769aa;
+	}
+
+	pre {
+		background-color: #f5f5f5;
+		border-radius: 6px;
+		overflow-x: auto;
+		padding: 16px;
+	}
+
+	code {
+		background-color: #f5f5f5;
+		border-radius: 3px;
+		padding: 2px 4px;
+	}
+
+	pre code {
+		padding: 0;
+	}
+
+	table {
+		border-collapse: collapse;
+		display: block;
+		overflow-x: auto;
+		width: 100%;
+	}
+
+	th,
+	td {
+		border: 1px solid #ddd;
+		padding: 8px 12px;
+		text-align: left;
+	}
+
+	th {
+		background-color: #f5f5f5;
+	}
+
+	blockquote {
+		border-left: 4px solid #ddd;
+		color: #666;
+		margin-left: 0;
+		padding-left: 16px;
+	}
+}
+
+@media (max-width: 640px) {
+	.docs-page {
+		gap: 20px;
+		grid-template-columns: 1fr;
+		padding: 24px 20px;
+	}
+
+	.docs-sidebar {
+		border-bottom: 1px solid #e5e5e5;
+		border-right: 0;
+		padding-bottom: 16px;
+		padding-right: 0;
+	}
+}

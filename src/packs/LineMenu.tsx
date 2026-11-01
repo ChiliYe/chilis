@@ -1,6 +1,7 @@
 /** @format */
 
 import "./LineMenu.scss";
+import { Link } from "react-router-dom";
 
 export interface LineMenuItemData {
 	href: string;
@@ -16,9 +17,15 @@ interface LineMenuProps {
 function LineMenuItem({ href, label, onClick }: LineMenuItemData) {
 	return (
 		<li>
-			<a href={href} onClick={onClick}>
-				{label}
-			</a>
+			{href.startsWith("/") ? (
+				<Link to={href} onClick={onClick}>
+					{label}
+				</Link>
+			) : (
+				<a href={href} onClick={onClick}>
+					{label}
+				</a>
+			)}
 		</li>
 	);
 }
